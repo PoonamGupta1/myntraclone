@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul li {
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", serif;
+}
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.256) 0px 5px 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+}
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+  font-size: 12px;
+}
+
+.right .profile-container {
+  padding: 12px;
+}
+
+.right .profile-container i {
+  padding-bottom: 4px;
+}
+.left img {
+  height: 60px;
+  padding-top: 10px;
+  padding-right: 60px;
+  padding-bottom: 8px;
+}
+.container {
+  margin: auto;
+}
+.section-container {
+  padding: 0 0vw;
+  margin: auto;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 17px; /* this padding is applying on left right not on top and bottom*/
+  font-size: 12.7px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.831);
+}
+
+.section1 {
+  background-color: white;
+  /* height: 200vh; */
+  margin-top: 80px;
+  padding-top: 30px;
+}
+
+nav ul li sup {
+  color: rgba(255, 0, 0, 0.74);
+  padding: 3px;
+}
+
+.right .input-container input {
+  width: 30vw;
+  padding: 12px;
+  border: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-family: "Roboto", serif;
+  outline: none;
+  background-color: rgba(128, 128, 128, 0.068);
+}
+
+.input-container i {
+  background-color: rgba(128, 128, 128, 0.068);
+  height: 40px;
+  color: rgba(128, 128, 128, 0.913);
+  display: flex;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  align-items: center;
+  width: 35px;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.section1 .home-page .homeImg {
+  width: 90%;
+}
+
+.section1 .carousel {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel img {
+  margin-top: 15px;
+  width: 100%;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section1 .heading {
+  padding-top: 80px;
+  padding-left: 40px;
+  padding-bottom: 80px;
+}
+.section1 .heading h1 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.783);
+  letter-spacing: 5px;
+  font-size: 28px;
+}
+
+.cart-container img {
+  width: 16.22%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+footer {
+  /* width: 100%; */
+  font-family: "Roboto", serif;
+  font-size: 13px;
+}
+.footer-container {
+  background-color: #fafbfc;
+  color: rgba(0, 0, 0, 0.76);
+}
+.footer-container .footer-section {
+  padding-top: 10px;
+}
+
+.footer-container .footer-section {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container .footer-section .content p {
+  color: rgba(0, 0, 0, 0.861);
+  font-weight: bold;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+.footer-container .footer-section .content {
+  padding: 12px;
+  margin-right: 12px;
+}
+
+.footer-container .footer-section .content ul li {
+  font-size: 13px;
+  /* padding-top: 3px; */
+  color: gray;
+  padding-bottom: 10px;
+}
+
+.content span {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.button {
+  background-color: black;
+  padding: 12px;
+  height: 20px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.button .button-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  height: 30px;
+}
+.button .button-container ul {
+  color: white;
+  padding-left: 12px;
+}
+.button img {
+  width: 20px;
+}
+
+.content .icons {
+  font-size: 20px;
+  margin-right: 17px;
+  color: rgba(0, 0, 0, 0.653);
+}
+.content .original-container img {
+  width: 50px;
+}
+.content .original-container {
+  display: flex;
+}
+.content .original-container span {
+  padding-left: 12px;
+}
+
+
+
+@media screen and (max-width: 1380px) and (min-width: 750px) {
+  .left img {
+    position: relative;
+    right: 120px;
+  }
+  nav ul li sup {
+    color: rgba(255, 0, 0, 0.74);
+    padding: 3px;
+  }
+  nav ul li {
+    list-style: none;
+    padding: 0 17px; /* this padding is applying on left right not on top and bottom*/
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.831);
+    display: none;
+  }
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .right .profile-container {
+    padding: 12px;
+  }
+
+  .right .profile-container i {
+    padding-bottom: 4px;
+  }
+
+  .right .input-container input {
+    width: 15vw;
+    padding: 12px;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-family: "Roboto", serif;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.068);
+  }
+
+  .input-container i {
+    background-color: rgba(128, 128, 128, 0.068);
+    height: 40px;
+    color: rgba(128, 128, 128, 0.913);
+    display: flex;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    align-items: center;
+    width: 35px;
+    font-size: 14px;
+    justify-content: center;
+  }
+  
+.section1 .heading {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-bottom: 60px;
+}
+.section1 .heading h1 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.783);
+  letter-spacing: 2px;
+  font-size: 17px;
+}
+}
+
+@media screen and (max-width: 751px) and (min-width:500px) {
+  .left img {
+    position: relative;
+    /* right: 120px; */
+    right: 20px;
+  }
+  nav ul li sup {
+    color: rgba(255, 0, 0, 0.74);
+    padding: 3px;
+  }
+  nav ul li {
+    list-style: none;
+    padding: 0 17px; /* this padding is applying on left right not on top and bottom*/
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    color: rgba(0, 0, 0, 0.831);
+    display: none;
+  }
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 65%;
+    font-size: 12px;
+  }
+
+  .right .profile-container {
+    padding: 12px;
+  }
+
+  .right .profile-container i {
+    padding-bottom: 4px;
+  }
+
+  .right .input-container input {
+    width: 15vw;
+    padding: 12px;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-family: "Roboto", serif;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.068);
+  }
+
+  .input-container i {
+    background-color: rgba(128, 128, 128, 0.068);
+    height: 40px;
+    color: rgba(128, 128, 128, 0.913);
+    display: flex;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    align-items: center;
+    width: 35px;
+    font-size: 13px;
+    justify-content: center;
+  }
+
+.section1 .heading {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+.section1 .heading h1 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.783);
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.cart-container img {
+  width: 19.2%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+.footer-container .footer-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-container .footer-section .content ul li {
+  font-size: 11px;
+  /* padding-top: 3px; */
+  color: gray;
+  padding-bottom: 8px;
+}
+
+.content .original-container img {
+  width: 30px;
+}
+
+}
+
+@media screen and (max-width: 500px) and (min-width:0px) {
+  .left img {
+    position: relative;
+    height: 24px;
+  }
+  nav ul li {
+    display: none;
+  }
+  .right {
+    width: 65%;
+    font-size: 12px;
+  }
+
+  .right .profile-container {
+    padding: 12px;
+  }
+
+  .right .profile-container i {
+    padding-bottom: 4px;
+  }
+
+  .right .input-container input {
+    width: 13vw;
+    font-size: 10px;
+    padding: 12px;
+    height: 7px;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-family: "Roboto", serif;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.068);
+  }
+
+  .input-container i {
+    background-color: rgba(128, 128, 128, 0.068);
+    height: 31px;
+    color: rgba(128, 128, 128, 0.913);
+    display: flex;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    align-items: center;
+    width: 10px;
+    padding-left: 6px;
+    font-size: 11px;
+    justify-content: center;
+  }
+
+  
+.right .profile-container {
+  padding: 2px;
+  font-size: 8px;
+}
+
+.right .profile-container i {
+  padding-bottom: 4px;
+}
+
+.section1 {
+  background-color: white;
+  /* height: 200vh; */
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+
+.section1 .heading {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.section1 .heading h1 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.783);
+  letter-spacing: 1.5px;
+  font-size: 12px;
+}
+
+.small-device  {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.cart-container img {
+  width: 24%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+.footer-container .footer-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-container .footer-section .content ul li {
+  font-size: 11px;
+  /* padding-top: 3px; */
+  color: gray;
+  padding-bottom: 8px;
+}
+
+.content .original-container img {
+  width: 30px;
+}
+
+
+
+}
